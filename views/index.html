@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app="myApp"> 
+<style>
+p {
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 26px;
+}
+a {
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 20px;
+}
+</style> 
+<head>
+    <title>User Login and Sessions</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+</head>
+        
+<body>  
+    <div ng-controller="myController">
+        <h2 id="welcomeText">Welcome. You are Logged In as
+            <%= username %>
+        </h2>
+        <a id="logoutLink" href="/logout">logout</a>
+        <a id="editLink" href="/user">Edit User</a>
+        <h2>Your favorite team is:<br><br></h2>
+	<p align="middle">
+	The {{teams.<%= color %>.city}} {{teams.<%= color %>.name}}<br><img src="{{teams.<%= color %>.logo}}">
+        </p>
+    </div>
+    <hr>
+    <span id="indexMsg">
+        <%= msg %>
+    </span>
+    <hr>
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="/javascripts/my_app.js"></script>
+</body>
+      
+</html>
