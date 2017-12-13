@@ -5,28 +5,42 @@ function hashPW(pwd){
   return crypto.createHash('sha256').update(pwd).
          digest('base64').toString();
 }
+
 exports.signup = function(req, res){
   console.log("Begin exports.signup");
-  var user = new User({username:req.body.username});
-  console.log("after new user exports.signup");
-  user.set('hashed_password', hashPW(req.body.password));
-  console.log("after hashing user exports.signup");
-  user.set('email', req.body.email);
-  console.log("after email user exports.signup");
-  user.save(function(err) {
-    console.log("In exports.signup");
-    console.log(err);
-    if (err){
-      res.session.error = err;
-      res.redirect('/signup');
+  User.findOne({ username: req.body.username })
+  .exec(function(err, user) {
+    if (!user){
+      var user = new User({username:req.body.username});
+      console.log("after new user exports.signup");
+      user.set('hashed_password', hashPW(req.body.password));
+      console.log("after hashing user exports.signup");
+      user.set('email', req.body.email);
+      console.log("after email user exports.signup");
+      user.save(function(err) {
+        console.log("In exports.signup");
+        console.log(err);
+        if (err){
+          res.session.error = err;
+          res.redirect('/signup');
+        } else {
+          req.session.user = user.id;
+          req.session.username = user.username;
+          req.session.msg = 'Authenticated as ' + user.username;
+          res.redirect('/');
+        }
+      });
     } else {
-      req.session.user = user.id;
-      req.session.username = user.username;
-      req.session.msg = 'Authenticated as ' + user.username;
-      res.redirect('/');
+      err = 'User Already Exists.';
+    } if(err) {
+      req.session.regenerate(function(){
+        req.session.msg = err;
+        res.redirect('/signup');
+      });
     }
   });
 };
+
 exports.login = function(req, res){
   User.findOne({ username: req.body.username })
   .exec(function(err, user) {

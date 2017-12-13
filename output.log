@@ -1,278 +1,45 @@
 nohup: ignoring input
 before / Route
+/login Route
+[0mGET /login [36m304 [0m10.513 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.278 ms - -[0m
+/signup Route
+[0mGET /signup [32m200 [0m2.120 ms - 769[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.267 ms - -[0m
+Begin exports.signup
+after new user exports.signup
+after hashing user exports.signup
+after email user exports.signup
+(node:12464) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+In exports.signup
+null
+[0mPOST /signup [36m302 [0m44.851 ms - 46[0m
 / Route
 Session {
   cookie: 
    { path: '/',
-     _expires: 2018-01-06T10:03:14.447Z,
+     _expires: 2018-01-13T08:55:24.203Z,
      originalMaxAge: 2628000000,
      httpOnly: true },
-  msg: 'Access denied!' }
-/ Route else user
-[0mGET / [36m302 [0m11.641 ms - 56[0m
-/login Route
-[0mGET /login [36m304 [0m6.565 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m3.343 ms - -[0m
-/login Route
-[0mGET /login [36m304 [0m1.681 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m1.953 ms - -[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2018-01-06T10:16:55.552Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true },
-  msg: 'Access denied!' }
-/ Route else user
-[0mGET / [36m302 [0m1.567 ms - 56[0m
-/login Route
-[0mGET /login [36m304 [0m2.580 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m2.259 ms - -[0m
-login
-{ _id: 5a2872316a8af1632c69f2f7,
-  email: 'bob@bob.com',
-  hashed_password: 'gbY32PzSxtpjWeaWMROhFw3nleS3JbhNHgtM/Z7FjOk=',
-  username: 'bob',
-  __v: 0,
-  color: 'yellow' }
-[0mPOST /login [36m302 [0m40.703 ms - 46[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2018-01-06T10:17:12.364Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true },
-  user: '5a2872316a8af1632c69f2f7',
-  username: 'bob',
-  msg: 'Authenticated as bob',
-  color: 'yellow' }
+  user: '5a31afdccc2b19b030bc18c2',
+  username: 'hello',
+  msg: 'Authenticated as hello' }
 / Route if user
-[0mGET / [32m200 [0m2.000 ms - 786[0m
-[0mGET /stylesheets/style.css [36m304 [0m3.003 ms - -[0m
-[0mGET /javascripts/my_app.js [36m304 [0m4.755 ms - -[0m
-[0mGET /user/profile [36m304 [0m3.860 ms - -[0m
+[0mGET / [32m200 [0m4.471 ms - 1003[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.103 ms - -[0m
+[0mGET /%7B%7Bteams..logo%7D%7D [33m404 [0m1.989 ms - 200[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.736 ms - -[0m
+[0mGET /user/profile [32m200 [0m3.857 ms - 146[0m
 /logout Route
-[0mGET /logout [36m302 [0m8.816 ms - 56[0m
+[0mGET /logout [36m302 [0m2.211 ms - 56[0m
 /login Route
-[0mGET /login [32m200 [0m0.869 ms - 721[0m
-[0mGET /stylesheets/style.css [36m304 [0m4.368 ms - -[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2018-01-06T10:17:14.105Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true } }
-/ Route else user
-[0mGET / [36m302 [0m6.558 ms - 56[0m
-/login Route
-[0mGET /login [32m200 [0m1.895 ms - 735[0m
-[0mGET /stylesheets/style.css [36m304 [0m1.316 ms - -[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2018-01-07T04:49:32.561Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true } }
-/ Route else user
-[0mGET / [36m302 [0m0.836 ms - 56[0m
-/login Route
-[0mGET /login [32m200 [0m0.738 ms - 735[0m
-[0mGET /stylesheets/style.css [32m200 [0m2.478 ms - 919[0m
-[0mGET /favicon.ico [33m404 [0m1.314 ms - 200[0m
-[0mGET /favicon.ico [33m404 [0m1.037 ms - 200[0m
+[0mGET /login [36m304 [0m1.610 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.240 ms - -[0m
 /signup Route
-[0mGET /signup [32m200 [0m2.005 ms - 783[0m
-[0mGET /stylesheets/style.css [36m304 [0m0.993 ms - -[0m
+[0mGET /signup [32m200 [0m1.489 ms - 769[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.776 ms - -[0m
 Begin exports.signup
-after new user exports.signup
-after hashing user exports.signup
-after email user exports.signup
-(node:21486) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
-In exports.signup
-null
-[0mPOST /signup [36m302 [0m15.746 ms - 46[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2018-01-07T04:49:42.757Z,
-     originalMaxAge: 2627999999,
-     httpOnly: true },
-  msg: 'Authenticated as ',
-  user: '5a298d46c4c344ee538614d0',
-  username: '' }
-/ Route if user
-[0mGET / [32m200 [0m2.835 ms - 774[0m
-[0mGET /stylesheets/style.css [36m304 [0m0.808 ms - -[0m
-[0mGET /javascripts/my_app.js [32m200 [0m1.547 ms - 401[0m
-[0mGET /user/profile [32m200 [0m1.616 ms - 132[0m
-/user Route
-[0mGET /user [32m200 [0m2.217 ms - 1221[0m
-[0mGET /javascripts/my_app.js [36m304 [0m11.996 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m9.015 ms - -[0m
-[0mGET /user/profile [36m304 [0m2.422 ms - -[0m
-[0mPOST /user/update [36m302 [0m5.229 ms - 54[0m
-/user Route
-[0mGET /user [32m200 [0m1.891 ms - 1217[0m
-[0mGET /javascripts/my_app.js [36m304 [0m1.539 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m1.530 ms - -[0m
-[0mGET /user/profile [32m200 [0m2.492 ms - 148[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2018-01-07T04:49:53.553Z,
-     originalMaxAge: 2627999999,
-     httpOnly: true },
-  msg: 'User Updated.',
-  user: '5a298d46c4c344ee538614d0',
-  username: '',
-  color: 'black' }
-/ Route if user
-[0mGET / [32m200 [0m1.078 ms - 775[0m
-[0mGET /javascripts/my_app.js [36m304 [0m1.535 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m1.513 ms - -[0m
-[0mGET /user/profile [36m304 [0m1.270 ms - -[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2018-01-07T17:22:18.473Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true } }
-/ Route else user
-[0mGET / [36m302 [0m1.851 ms - 56[0m
-/login Route
-[0mGET /login [32m200 [0m1.382 ms - 735[0m
-[0mGET /stylesheets/style.css [32m200 [0m0.517 ms - 919[0m
-[0mGET /favicon.ico [33m404 [0m2.653 ms - 200[0m
+[0mPOST /signup [36m302 [0m9.153 ms - 58[0m
 /signup Route
-[0mGET /signup [32m200 [0m0.957 ms - 783[0m
-[0mGET /stylesheets/style.css [36m304 [0m0.789 ms - -[0m
-Begin exports.signup
-after new user exports.signup
-after hashing user exports.signup
-after email user exports.signup
-In exports.signup
-null
-[0mPOST /signup [36m302 [0m3.504 ms - 46[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2018-01-07T17:22:30.998Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true },
-  msg: 'Authenticated as russfitz',
-  user: '5a2a3db6c4c344ee538614d1',
-  username: 'russfitz' }
-/ Route if user
-[0mGET / [32m200 [0m3.747 ms - 790[0m
-[0mGET /stylesheets/style.css [36m304 [0m5.324 ms - -[0m
-[0mGET /javascripts/my_app.js [32m200 [0m5.308 ms - 401[0m
-[0mGET /user/profile [32m200 [0m1.642 ms - 140[0m
-/user Route
-[0mGET /user [32m200 [0m0.754 ms - 1229[0m
-[0mGET /javascripts/my_app.js [36m304 [0m1.368 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m2.408 ms - -[0m
-[0mGET /user/profile [36m304 [0m1.319 ms - -[0m
-[0mPOST /user/update [36m302 [0m3.266 ms - 54[0m
-/user Route
-[0mGET /user [32m200 [0m1.594 ms - 1217[0m
-[0mGET /stylesheets/style.css [36m304 [0m2.871 ms - -[0m
-[0mGET /javascripts/my_app.js [36m304 [0m1.951 ms - -[0m
-[0mGET /user/profile [32m200 [0m1.521 ms - 154[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2018-01-07T17:22:40.382Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true },
-  msg: 'User Updated.',
-  user: '5a2a3db6c4c344ee538614d1',
-  username: 'russfitz',
-  color: 'Red' }
-/ Route if user
-[0mGET / [32m200 [0m0.989 ms - 781[0m
-[0mGET /stylesheets/style.css [36m304 [0m2.109 ms - -[0m
-[0mGET /javascripts/my_app.js [36m304 [0m2.244 ms - -[0m
-[0mGET /user/profile [36m304 [0m2.245 ms - -[0m
-/user Route
-[0mGET /user [36m304 [0m0.745 ms - -[0m
-[0mGET /javascripts/my_app.js [36m304 [0m4.965 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m4.945 ms - -[0m
-[0mGET /user/profile [36m304 [0m2.374 ms - -[0m
-[0mPOST /user/delete [36m302 [0m2.931 ms - 56[0m
-/login Route
-[0mGET /login [32m200 [0m0.748 ms - 721[0m
-[0mGET /stylesheets/style.css [36m304 [0m0.722 ms - -[0m
-[0mGET /signup.html [33m404 [0m4.123 ms - 200[0m
-[0mGET /stylesheets/style.css [32m200 [0m1.005 ms - 919[0m
-[0mGET /favicon.ico [33m404 [0m0.602 ms - 200[0m
-[0mGET /signin.html [33m404 [0m0.618 ms - 200[0m
-[0mGET /stylesheets/style.css [36m304 [0m0.731 ms - -[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2018-01-11T09:01:44.798Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true } }
-/ Route else user
-[0mGET / [36m302 [0m0.986 ms - 56[0m
-/login Route
-[0mGET /login [32m200 [0m1.670 ms - 735[0m
-[0mGET /stylesheets/style.css [36m304 [0m0.731 ms - -[0m
-[0mPOST /login [36m302 [0m7.636 ms - 56[0m
-/login Route
-[0mGET /login [32m200 [0m0.760 ms - 743[0m
-[0mGET /stylesheets/style.css [36m304 [0m0.727 ms - -[0m
-/signup Route
-[0mGET /signup [32m200 [0m1.917 ms - 791[0m
-[0mGET /stylesheets/style.css [36m304 [0m1.227 ms - -[0m
-Begin exports.signup
-after new user exports.signup
-after hashing user exports.signup
-after email user exports.signup
-In exports.signup
-{ MongoError: E11000 duplicate key error collection: myapp.users index: username_1 dup key: { : "bob" }
-    at Function.MongoError.create (/opt/bitnami/nodejs/lib/node_modules/mongoose/node_modules/mongodb-core/lib/error.js:31:11)
-    at toError (/opt/bitnami/nodejs/lib/node_modules/mongoose/node_modules/mongodb/lib/utils.js:114:22)
-    at /opt/bitnami/nodejs/lib/node_modules/mongoose/node_modules/mongodb/lib/collection.js:620:23
-    at handleCallback (/opt/bitnami/nodejs/lib/node_modules/mongoose/node_modules/mongodb/lib/utils.js:96:12)
-    at /opt/bitnami/nodejs/lib/node_modules/mongoose/node_modules/mongodb/lib/bulk/unordered.js:473:9
-    at handleCallback (/opt/bitnami/nodejs/lib/node_modules/mongoose/node_modules/mongodb/lib/utils.js:96:12)
-    at resultHandler (/opt/bitnami/nodejs/lib/node_modules/mongoose/node_modules/mongodb/lib/bulk/unordered.js:420:5)
-    at commandCallback (/opt/bitnami/nodejs/lib/node_modules/mongoose/node_modules/mongodb-core/lib/topologies/server.js:1194:9)
-    at Callbacks.emit (/opt/bitnami/nodejs/lib/node_modules/mongoose/node_modules/mongodb-core/lib/topologies/server.js:119:3)
-    at Connection.messageHandler (/opt/bitnami/nodejs/lib/node_modules/mongoose/node_modules/mongodb-core/lib/topologies/server.js:358:23)
-    at Socket.<anonymous> (/opt/bitnami/nodejs/lib/node_modules/mongoose/node_modules/mongodb-core/lib/connection/connection.js:292:22)
-    at emitOne (events.js:96:13)
-    at Socket.emit (events.js:188:7)
-    at readableAddChunk (_stream_readable.js:176:18)
-    at Socket.Readable.push (_stream_readable.js:134:10)
-    at TCP.onread (net.js:547:20)
-  name: 'MongoError',
-  message: 'E11000 duplicate key error collection: myapp.users index: username_1 dup key: { : "bob" }',
-  driver: true,
-  code: 11000,
-  index: 0,
-  errmsg: 'E11000 duplicate key error collection: myapp.users index: username_1 dup key: { : "bob" }',
-  getOperation: [Function],
-  toJSON: [Function],
-  toString: [Function] }
-events.js:160
-      throw er; // Unhandled 'error' event
-      ^
-
-TypeError: Cannot set property 'error' of undefined
-    at /opt/bitnami/apache2/htdocs/lab6/controllers/users_controller.js:20:25
-    at /opt/bitnami/nodejs/lib/node_modules/mongoose/lib/model.js:3324:16
-    at /opt/bitnami/nodejs/lib/node_modules/mongoose/lib/document.js:1932:15
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-    at process._tickCallback (internal/process/next_tick.js:104:9)
+[0mGET /signup [32m200 [0m1.826 ms - 789[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.333 ms - -[0m
